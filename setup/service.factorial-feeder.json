@@ -1,0 +1,9 @@
+{
+  "FunctionName": "factorial-feeder",
+  "Runtime": "java17",
+  "Role": "arn:aws:iam::000000000000:role/service-role",
+  "Handler": "software.abacus.FactorialFeeder::handleRequest",
+  "Description": "factorial-feeder(sqs-request) => factorial-calculation to EventBridge.abacus-bus",
+  "Timeout": 15,
+  "MemorySize": 256
+}

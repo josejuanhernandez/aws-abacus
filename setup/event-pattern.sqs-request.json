@@ -1,0 +1,10 @@
+{
+  "source": ["aws.sqs"],
+  "detail": {
+    "eventSource": ["sqs.amazonaws.com"],
+    "eventName": ["SendMessage"],
+    "requestParameters": {
+      "queueName": ["factorial-requests"]
+    }
+  }
+}

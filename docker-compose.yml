@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  localstack:
+    image: localstack/localstack-pro:3.0.0
+    environment:
+      - LOCALSTACK_API_KEY=
+      - LOCALSTACK_HOST=localstack
+      - SERVICES=lambda,logs,cloudwatch,events,iam,sqs
+      - LAMBDA_EXECUTOR=docker-reuse
+      - LAMBDA_REMOTE_DOCKER=false
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - DEBUG=1
+    ports:
+      - "53:53"
+      - "53:53/udp"
+      - "443:443"
+      - '4566:4566'
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"

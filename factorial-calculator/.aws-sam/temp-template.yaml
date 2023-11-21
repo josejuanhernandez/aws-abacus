@@ -1,0 +1,11 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: software.abacus.FactorialCalculator
+      CodeUri: /Users/josejuanhernandez/GitHub/aws-abacus/factorial-calculator
+      Runtime: java11
+      Architectures:
+        - arm64

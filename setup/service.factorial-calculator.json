@@ -1,0 +1,10 @@
+{
+  "FunctionName": "factorial-calculator",
+  "Runtime": "java17",
+  "Role": "arn:aws:iam::000000000000:role/service-role",
+  "Handler": "software.abacus.FactorialCalculator::handleRequest",
+  "Description": "factorial-calculator(factorial-calculation) => response to SQS.Responses",
+  "Timeout": 120,
+  "MemorySize": 1024
+
+}

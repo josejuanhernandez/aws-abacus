@@ -1,0 +1,30 @@
+[
+    {
+        "Source": "test",
+        "DetailType": "factorial-calculation",
+        "Detail": "{ 'number': 2 }",
+        "EventBusName": "abacus-bus"
+
+    },
+    {
+        "Source": "test",
+        "DetailType": "factorial-calculation",
+        "Detail": "{ 'number': 3 }",
+        "EventBusName": "abacus-bus"
+
+    },
+    {
+        "Source": "test",
+        "DetailType": "factorial-calculation",
+        "Detail": "{ 'number': 4 }",
+        "EventBusName": "abacus-bus"
+
+    },
+    {
+        "Source": "test",
+        "DetailType": "factorial-calculation",
+        "Detail": "{ 'number': 5 }",
+        "EventBusName": "abacus-bus"
+
+    }
+]
